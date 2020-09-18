@@ -1,0 +1,12 @@
+
+  <h1 class="title"> Country Details</h1>
+<div *ngIf="element">
+  <mat-card class="card">
+    <mat-card-title-group>
+     <mat-card-title>{{element.name}}</mat-card-title>
+     <mat-card-subtitle>capital: {{element.capital}}</mat-card-subtitle>
+     <img mat-card-md-image [src]="element.flag">
+     <mat-card-subtitle>Population:{{element.population}}</mat-card-subtitle>
+     <mat-card-subtitle>Area: {{element.area}}</mat-card-subtitle>
+     <mat-card-subtitle>Calling Code: {{element.callingCodes}}</mat-card-subtitle>
+    </mat-card-title-group>
